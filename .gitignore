@@ -1,7 +1,10 @@
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
+<<<<<<< HEAD
 *$py.class
+=======
+>>>>>>> a65d1d6c4b79f9e779847951da3345352744a713
 
 # C extensions
 *.so
@@ -43,7 +46,10 @@ htmlcov/
 nosetests.xml
 coverage.xml
 *,cover
+<<<<<<< HEAD
 .hypothesis/
+=======
+>>>>>>> a65d1d6c4b79f9e779847951da3345352744a713
 
 # Translations
 *.mo
@@ -56,4 +62,8 @@ coverage.xml
 docs/_build/
 
 # PyBuilder
+<<<<<<< HEAD
 target/
+=======
+target/
+>>>>>>> a65d1d6c4b79f9e779847951da3345352744a713
