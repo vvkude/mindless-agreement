@@ -1,0 +1,81 @@
+<!-- Sadly, the masking on the buttons don't work AT ALL in firefox until I properly map them via SVG -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="robots" content="noindex"> <!-- back off, robots -->
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link type="text/css" rel="stylesheet" 
+    href="http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/css/styles.css">
+  <link href='https://fonts.googleapis.com/css?family=Abril+Fatface' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <script src="http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/js/CSSTarget.js"></script>
+  
+  <!-- getApple/Google/Facebook/Twitter should all be one file that simply 
+    chooses which company's XML file to load based on which navigational 
+    button is selected by using an event handler and passes the id to the 
+    function. For testing XHR and CORS, they are in separate files for now -->
+  
+  <script src = "http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/js/getResource.js"></script>
+  <script src =" http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/js/getApple.js"></script>
+  <script src =" http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/js/getFacebook.js"></script>
+  <script src = "http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/js/getGoogle.js"></script>
+  <script src = "http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/js/getTwitter.js"></script>
+  <script src=  "http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/js/getRandomAgreementLine.js"></script>
+  <!--[TODO] Add CSSPIE and IE conditional statements-->
+</head>
+<body>
+
+<div id = "a-container" class="agreement-container">
+  <div id="instructions" class="cent-text__footer" role = "banner">
+    <p role = "contentinfo">Click one of the logos to see a random line from their terms of agreement.</p>
+    <p> It's possible you've already agreed to it...</p> 
+  </div> <!-- /instructions agreementSource cent-text__footer-->
+  <div id="COA" class = "circleOfAgreements" role = "region">
+    <blockquote id = "testing">
+      <div id = "special" class = "superSpecial"></div> <!-- /superSpecial *testing class*  -->
+    </blockquote> <!-- /blockquote with before element -->
+  <!-- [TODO] Linkify agreement source information back to original agreement or provide additional context -->
+    <div id="source" class="agreementSource cent-text__footer"></div> <!-- /agreementSource cent-text__footer-->
+  </div><!-- /circleOfAgreements -->
+</div><!-- /agreement-container -->
+
+<!-- [TODO] Add Modernizr to detect flexbox support...or use good ol' tables as a fallback -->
+
+<section class = "flexbox-container base64Grid" role = "navigation">
+<!-- [FIXME] Each __item is actually a -container to preserve circular properties -->
+<div class = "n-container" id = "a-container">
+  <button name = "apple" class = "n-container__item apple__mask" id = "b1" role="button" onclick="getApple()" alt = "See what Apple says"/>
+</div> <!--/ n-container -->
+<div class = "n-container" id = "g-container">
+  <button name = "google" type="button" class = "n-container__item google__mask" id = "b2" role="button" onclick="getGoogle()"/>
+</div> <!--/ n-container -->
+<div class = "n-container" id = "f-container">
+  <button name = "facebook" type="button" class = "n-container__item facebook__mask" id = "b3" role="button" onclick="getFacebook()"/>
+</div> <!--/ n-container -->
+<div class = "n-container" id = "t-container">
+  <button name = "twitter" type="button" class = "n-container__item twitter__mask" id = "b4" role="button" onclick="getTwitter()"/>
+</div> <!--/ n-container -->
+</section> <!-- /flexbox-container section-->
+
+
+
+<!-- testing classes-->
+<!--<div id="easeMe" class="span2 base64Grid">
+  <div id="company" class="companyHeader"><h5></div>
+  <blockquote id="testing"></blockquote></h5>
+  
+<div id="source" class="agreementSource cent-text__footer"><h5></h5></div>
+</div>
+
+<div id="demo2" class="agreementText"><h2></h2></div>-->
+
+<!-- [TODO] fall back for old browsers
+<div class="v-footer" role="footer"></div>
+-->
+
+
+</body>
+</html>

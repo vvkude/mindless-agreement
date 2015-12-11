@@ -1,0 +1,346 @@
+<!--
+	**
+	* 
+	* Created with python by lxml import etree
+	* root = etree.Element('root')
+	* from a download of the license terms page
+	* from Apple's Terms of Agreement site
+	*
+	* Note that there is only one COMPANY child per XML file
+	* This is because, when the files are merged into one, all of the other
+	* child elements will be nested under its respective COMPANY node
+	* There is purposefully a whitespace at the beginning of the COMPANY node's child
+	*
+	* SOURCE labels what agreement the string is from
+	* There is purposefully a whitespace at the beginning of the SOURCE node's child
+	*
+	* AGREEMENTSNIPPET strings are from newline breaks
+	* WEIGHT is to selectively display or sort certain strings
+	* LONG notes whether extra processing is necessary (0 = no; 1 = yes)
+	*
+	* [TODO] Add styling to this XML file
+	*
+	**
+-->
+
+<CATALOG>
+	<COMPANY> Facebook</COMPANY>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We collect the content and other information you provide when you use our Services, including when you sign up for an account, create or share, and message or communicate with others.</AGREEMENTSNIPPET>
+		<WEIGHT>10</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>This can include information in or about the content you provide, such as the location of a photo or the date a file was created.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We also collect information about how you use our Services, such as the types of content you view or engage with or the frequency and duration of your activities.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We also collect content and information that other people provide when they use our Services, including information about you, such as when they share a photo of you, send a message to you, or upload, sync or import your contact information.</AGREEMENTSNIPPET>
+		<WEIGHT>1</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We collect information when you visit or use third-party websites and apps that use our Services (like when they offer our Like button or Facebook Log In or use our measurement and advertising services).</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We collect information about the websites and apps you visit, your use of our Services on those websites and apps, as well as information the developer or publisher of the app or website provides to you or us.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We use your information to send you marketing communications, communicate with you about our Services and let you know about our policies and terms.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We also use your information to respond to you when you contact us.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We use the information we have to improve our advertising and measurement systems so we can show you relevant ads on and off our Services and measure the effectiveness and reach of ads and services.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We use the information we have to help verify accounts and activity, and to promote safety and security on and off of our Services, such as by investigating suspicious activity or violations of our terms or policies.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We work hard to protect your account using teams of engineers, automated systems, and advanced technology such as encryption and machine learning.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>Safety and child psychology experts tell us that online issues are frequently a reflection of what is happening offline.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET> We want our advertising to be as relevant and interesting as the other information you find on our Services.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>With this in mind, we use all of the information we have about you to show you relevant ads.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We do not share information that personally identifies you (personally identifiable information is information like name or email address that can by itself be used to contact you or identifies who you are) with advertising, measurement or analytics partners unless you give us permission.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We may provide these partners with information about the reach and effectiveness of their advertising without providing information that personally identifies you, or if we have aggregated the information so that it does not personally identify you.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We may tell an advertiser how its ads performed, or how many people viewed their ads or installed an app after seeing an ad, or provide non-personally identifying demographic information (such as 25 year old female, in Madrid, who likes software engineering) to these partners to help them understand their audience or customers, but only after the advertiser has agreed to abide by our advertiser guidelines.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>1</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We may access, preserve and share your information in response to a legal request (like a search warrant, court order or subpoena) if we have a good faith belief that the law requires us to do so.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>This may include responding to legal requests from jurisdictions outside of the United States where we have a good faith belief that the response is required by law in that jurisdiction, affects users in that jurisdiction, and is consistent with internationally recognized standards</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>	
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We may also access, preserve and share information when we have a good faith belief it is necessary to: detect, prevent and address fraud and other illegal activity; to protect ourselves, you and others, including as part of investigations; or to prevent death or imminent bodily harm. For example, we may provide information to third-party partners about the reliability of your account to prevent fraud and abuse on and off of our Services</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>1</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>Information we receive about you, including financial transaction data related to purchases made with Facebook, may be accessed, processed and retained for an extended period of time when it is the subject of a legal request or obligation, governmental investigation, or investigations concerning possible violations of our terms or policies, or otherwise to prevent harm.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>1</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We also may retain information from accounts disabled for violations of our terms for at least a year to prevent repeat abuse or other violations of our terms.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We carefully review reports of threatening language to identify serious threats of harm to public and personal safety</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We remove credible threats of physical harm to individuals. We also remove specific threats of theft, vandalism, or other financial harm.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We may consider things like a person's physical location or public visibility in determining whether a threat is credible.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We may assume credibility of any threats to people living in violent and unstable regions.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We don’t allow the promotion of self-injury or suicide.</AGREEMENTSNIPPET>
+		<WEIGHT>10</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET> We work with organizations around the world to provide assistance for people in distress.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We prohibit content that promotes or encourages suicide or any other type of self-injury, including self-mutilation and eating disorders.</AGREEMENTSNIPPET>
+		<WEIGHT>10</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We don't consider body modification to be self-injury.</AGREEMENTSNIPPET>
+		<WEIGHT>10</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We also remove any content that identifies victims or survivors of self-injury or suicide and targets them for attack, either seriously or humorously.</AGREEMENTSNIPPET>
+		<WEIGHT>9</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>People can, however, share information about self-injury and suicide that does not promote these things.</AGREEMENTSNIPPET>
+		<WEIGHT>9</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We don’t allow any organizations that are engaged in terrorist activities or organized criminal activity to have a presence on Facebook.</AGREEMENTSNIPPET>
+		<WEIGHT>9</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We also remove content that expresses support for groups that are involved in violent or criminal behavior.</AGREEMENTSNIPPET>
+		<WEIGHT>8</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>Supporting or praising leaders of tterrorist organizations, or condoning their violent activities, is not allowed.</AGREEMENTSNIPPET>
+		<WEIGHT>8</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We welcome broad discussion and social commentary on these general subjects, but ask that people show sensitivity towards victims of violence and discrimination.</AGREEMENTSNIPPET>
+		<WEIGHT>7</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We don’t tolerate bullying or harassment.</AGREEMENTSNIPPET>
+		<WEIGHT>5</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We allow you to speak freely on matters and people of public interest, but remove content that appears to purposefully target private individuals with the intention of degrading or shaming them.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We permit open and critical discussion of people who are featured in the news or have a large public audience based on their profession or chosen activities.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We remove credible threats to public figures, as well as hate speech directed at them – just as we do for private individuals.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We prohibit the use of Facebook to facilitate or organize criminal activity that causes physical harm to people, businesses or animals, or financial damage to people or businesses.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We work with law enforcement when we believe there is a genuine risk of physical harm or direct threats to public safety.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We also prohibit you from celebrating any crimes you’ve committed.</AGREEMENTSNIPPET>
+		<WEIGHT>10</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We do allow people to debate or advocate for the legality of criminal activities, as well as address them in a humorous or satirical way.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>Our definition of sexual exploitation includes solicitation of sexual material, any sexual content involving minors, threats to share intimate images, and offers of sexual services.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>Offers of sexual services include prostitution, escort services, sexual massages, and filmed sexual activity.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We prohibit any attempts by unauthorized dealers to purchase, sell, or trade prescription drugs and marijuana.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>If you post an offer to purchase or sell firearms, alcohol, tobacco, or adult products, we expect you to comply with all applicable laws and carefully consider the audience for that content.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We do not allow you to use Facebook's payment tools to sell or purchase regulated goods on our platform.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>If we discover that you have multiple personal profiles, we may ask you to close the additional profiles.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>We also remove any profiles that impersonate other people.</AGREEMENTSNIPPET>
+		<WEIGHT>0</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>If you want to create a presence on Facebook for your pet, organization, favorite movie, games character, or another purpose, please create a Page instead of a Facebook Profile.</AGREEMENTSNIPPET>
+		<WEIGHT>8</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+	<SNIPPET>
+		<SOURCE> Terms and Policies</SOURCE>
+		<AGREEMENTSNIPPET>Once we receive proof of death, we secure and memorialize accounts.</AGREEMENTSNIPPET>
+		<WEIGHT>10</WEIGHT>
+		<LONG>0</LONG>
+	</SNIPPET>
+</CATALOG>

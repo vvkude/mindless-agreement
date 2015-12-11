@@ -1,0 +1,837 @@
+/* -----------------------------------------------------------------------------
+  ROOT ELEMENTS
+  
+----------------------------------------------------------------------------- */
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* [TODO] add @ font-face from font squirrel */
+body {
+  color: #ffffff;
+  font-family: "Vollkorn";
+  font-size: 18px;
+  line-height: 1.8;
+  background: url("http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/media/bg_smoke.png") no-repeat center center fixed; 
+  background-size: cover;
+}
+
+
+/* -----------------------------------------------------------------------------
+  HEADING ELEMENTS
+  
+----------------------------------------------------------------------------- */
+h1{
+  font-family: "Vollkorn";
+  color: #555;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke: 1px #000000;
+}
+
+h2,
+h3 {
+  color: #ffffff;
+  font-size: small;
+}
+
+h4 {
+  font-family: "Vollkorn";
+}
+
+h5 {
+  font-family: "Vollkorn";
+  font-weight: 700;
+  font-size: medium;
+  font-style: bold;
+}
+
+h5.adjusted{
+  font-weight: 500;
+  font-style: bold;
+}
+
+h6 {
+  color: #3b3b3b;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+/* -----------------------------------------------------------------------------
+  TEXT ELEMENTS
+  
+----------------------------------------------------------------------------- */
+a {
+  color: #28aadc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00648c;
+}
+
+b,
+strong {
+  font-weight: 700;
+}
+
+i,
+em {
+  font-style: italic;
+}
+
+p {
+  font-size: 22px;
+}
+
+p::first-letter {
+  font-family: "Abril";
+  margin: 0rem .5rem 0rem;
+  font-size: 72px;
+  line-height: 1;
+  color: rgb(255, 255, 255);
+  text-shadow: 4px 4px 0 rgb(200,200,200);
+}
+
+/* -----------------------------------------------------------------------------
+  FALLBACK BUTTONS 
+  
+----------------------------------------------------------------------------- */
+.v-buttons {
+  margin-bottom: 48px;
+  text-align: center;
+}
+
+.v-button {
+  display: inline-block;
+  margin: 4px;
+  padding: 12px 24px;
+  color: #001933;
+  background: #07a7de;
+  font-size: 20px;
+  font-family: "Vollkorn";
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.v-button:hover {
+  color: #fff;
+  background-color: #FF4D4D;
+}
+
+.v-button:focus {
+  outline: none;
+  
+}
+
+.v-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+/* -----------------------------------------------------------------------------
+  HEADER OBJECT - to be used as a final fallback for old browsers 
+    to be used in an unordered list or table
+----------------------------------------------------------------------------- */
+.v-header {
+  margin: 0;
+  padding: 0;
+}
+
+.v-header-nav {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.v-header-nav__link {
+  padding: 12px;
+  color: #ffffff;
+}
+
+.v-header-nav__link:hover {
+  color: #fff;
+}
+
+.v-header__title {
+  margin: 0px;
+  padding: 0;
+  color: #818181;
+  font-size: 28px;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media all and (min-width: 480px) { /*width of an iPhone 4*/
+  .v-header__title {
+    margin: 0px;
+    font-size: 42px;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+  FOOTER OBJECT
+  
+----------------------------------------------------------------------------- */
+.v-footer {
+  padding: 12px 0;
+  text-align: center;
+}
+
+@media all and (min-width: 480px) {
+  .v-footer {
+    padding: 24px 0;
+  }
+}
+@media all and (min-width: 720px) {
+  .v-footer {
+    padding: 48px 0;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+  LAYOUT ELEMENTS
+  
+----------------------------------------------------------------------------- */
+section {
+  background:url(
+   data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVQIW2OMq7zlw4ADMIIkF7WrbcEmP+gkAarWGgXyq5CNAAAAAElFTkSuQmCC
+    ) repeat;
+}
+
+/* -----------------------------------------------------------------------------
+  PLAYGROUND
+  
+----------------------------------------------------------------------------- */
+.agreementText {
+  margin-top: 23px;
+}
+
+
+blockquote{
+  font-family: 'Abril';
+  background: transparent;
+  /*border-left:1em solid #FF414D;*/
+  margin:2.7em 0 1.5em 1em;
+  /*padding:0 1em 0 5.5em;*/
+  quotes:"\201C""\201D";
+  position:relative;
+}
+       
+
+/* FIXME text selection works but the selection area is oversized in chrome */
+/* This is due to the position element...*/
+
+blockquote:before{
+  color:#FF414D;
+  content:open-quote;
+  font-size:21em;
+  position:absolute;
+  line-height:.1em;
+  left: -27px;
+  top: 137px;
+  vertical-align:.4em;
+}
+       
+blockquote:first-child{
+  display:inline;
+}
+       
+blockquote:last-child{
+  margin-bottom:0;
+}
+
+/* -----------------------------------------------------------------------------
+  PLAYGROUND
+  
+----------------------------------------------------------------------------- */
+.circleOfAgreements {
+  background: transparent;
+  width: 207px;
+  height: 207px;
+  top: 2rem;
+  border-radius: 50%;
+}
+
+/* iPhone */
+@media all and (max-width: 480px) {
+  .circleOfAgreements {
+    width: 707px;
+    height: 707px;
+    border-radius: 50%;
+    margin-right: 1rem;
+  }
+}
+
+@media all and (max-width: 414px) {
+  .circleOfAgreements {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-right: 1rem;
+    left: 400px;
+  }
+}
+
+.span1 {
+  background:inherit;
+  width:51%;
+  height:100%;
+  position: absolute;
+  overflow: hidden;
+  border: 3px black;
+  left: 47%;
+  top: 9%;
+  opacity: .88;
+  border-radius: 3%;
+}
+
+.span2 {
+  border-radius: 50%;
+  font-family: 'Vollkorn';
+  background:inherit;
+  width:420px;
+  height:420px;
+  top: 29%;
+  margin: 137px 0px 23px 23px;
+  opacity: .93;
+}
+
+/*Better rename this to c-container__item or something like that
+.span3 {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  /*border-bottom: solid 5px black; // for layout testing only
+  border-radius: 15%;
+}*/
+
+.easeMe {
+  background: none;
+  overflow: hidden;
+}
+
+.companyHeader, .agreementSource {
+  width: 100%;
+  font-weight: 700;
+  font-style: bold;
+}
+
+.agreementSource:before {
+  font-family: 'Abril';
+  font-size: 3em;
+  content: "\2B02";
+}
+
+/* [TODO] use div[class^='name'] */
+.base64Grid { /* From www.patternify.com */
+   background:url(
+   data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVQIW2OMq7zlw4ADMIIkF7WrbcEmP+gkAarWGgXyq5CNAAAAAElFTkSuQmCC
+    ) repeat;
+}
+
+.superSpecial {
+  width: 100%;
+  margin: 4rem 0rem 0rem ;
+  /*margin: 11% 0% 0% 20%;*/
+}
+
+/* -----------------------------------------------------------------------------
+  NAVIGATIONAL ELEMENTS
+  
+----------------------------------------------------------------------------- */
+/** 
+ *
+ *No background mask in lte IE 9, this is a problem for this app - use alpha?
+ * 
+ * I thought you could use the backround shorthand if it occurs after 
+ * background position? Am I wrong? Obviiiii
+ *
+ *
+ */
+
+.n-container__item {
+  cursor: pointer; /* We want users to know they are clicking a button */
+  width: 80px;
+  height: 80px; 
+  border-radius: 50%;
+  background: rgb(241,231,103);                 /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(241,231,103,1) 0%, rgba(255,95,105,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top,  rgba(241,231,103,1) 0%,rgba(255,95,105,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom,  rgba(241,231,103,1) 0%,rgba(255,95,105,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f1e767', endColorstr='#ff5f69',GradientType=0 ); /* IE6-9 */
+  margin: 3px;                                /* We don't want this to scale with text size, so we are defining it in terms of pixels */
+  transition: 0.4s cubic-bezier(1, -1, 0, 2); /* easing effect on resize */
+  
+}
+
+
+
+.n-container__item:hover { 
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.apple__mask {
+  -webkit-mask-image: url("http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/media/applemask002.png");
+  -webkit-mask-position: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+  /*mask: url(media/svg/applemask002.png#applemaskid); OOhhhhhhh Firefoxxxxxx argrhghgh */
+}
+
+.google__mask {
+  -webkit-mask-image: url("http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/media/googlemask.png");
+  -webkit-mask-position: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+}
+
+.facebook__mask {
+  -webkit-mask-image: url("http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/media/FB-f-Logo__white_512.png");
+  -webkit-mask-position: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+}
+
+.twitter__mask {
+  -webkit-mask-image: url("http://7c17463f1596fe090e72-72cc7b7e3d1bfe016e789931389f4585.r49.cf2.rackcdn.com/media/twittermask002.png");
+  -webkit-mask-position: 50% 50%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100%;
+}
+
+/* -----------------------------------------------------------------------------
+  POSITIONING *TESTING*
+  
+----------------------------------------------------------------------------- */
+.cent-text__footer {  /* div[class^='circleOfAgreements'] */
+  text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* rememeber, IE gte 6 lte 9 doesn't support border-radius and will not see a circle at all */
+/* CSS3Pie js module to the rescue */
+
+/* for testing */
+.easeIt {
+  transition: 0.4s cubic-bezier(1, -1, 0, 2); /* easing effect on resize */
+}
+
+/* -----------------------------------------------------------------------------
+  MEDIA QUERIES 
+
+----------------------------------------------------------------------------- */
+/** 
+ *
+ *  
+ * [FIXME] I screwed up at around 1300 px wide and 705 px height
+ *          I forgot to put "(orientation: landscape)"" on some of these! Boooo
+ *  
+ * [TODO] add max-device-width, instead
+ * [TODO] Clean up media queries when testing is done done
+ *
+ *
+ **/
+
+@media all and (min-width: 480px) and (min-height: 600px) {
+  .n-container__item {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+}
+
+@media all and (min-width: 1920px) {
+  .n-container__item {
+    width: 197px;
+    height: 197px;
+    border-radius: 50%;
+  }
+}
+
+/*iPhone 6*/
+@media all and (max-width: 667px) {
+  .n-container__item {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    padding: .77rem;
+  }
+}
+
+/* query for iPhone 6's in landscape mode */
+@media all and (max-height: 600px) and (orientation:landscape) {
+  .n-container__item {
+    width: 61px;
+    height: 61px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    padding: .77rem;
+  }
+}
+
+/** 
+ *
+ * Absolutely positioned elements are out of the document 
+ * flow and can't logically wrap against other text
+ *  
+ * I am trying to specify hard widths and avoid absolute positioning
+ *
+ *
+ *
+ **/
+
+.flexbox-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: horizontal;
+  justify-content: space-around;
+  -ms-flex-pack: justify;
+  position: relative;
+  height: 80%;
+  /*top: 9%;*/
+  /*left: 50%;*/
+  /*padding: 1rem 1rem 2rem 1rem;*/
+}
+
+/* [TODO] add max-device-width, instead */
+@media all and (min-width: 667px) { /*make circles horizontal for smaller width devices*/
+  .flexbox-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 80%;
+  /*top: 9%;*/
+  left: 300px;
+  padding: 5rem 1rem 7rem 1rem;
+  }
+
+  p {
+    width: 300px;
+  }
+}
+
+
+@media all and (min-width: 1366.99px) {
+  .flexbox-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  /*top: 9%;*/
+  left: 900px;
+  padding: 5rem 1rem 7rem 1rem;
+  }
+
+  .agreement-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: horizontal;
+  justify-content: space-around;
+  /*position: relative;*/
+  width: 335px;
+  height: 335px;
+  margin-left: 300px;
+  /*top: 9%;*/
+  padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .n-container__item {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 2.33rem;
+  }
+}
+
+/*oops*/
+@media all and (min-width: 1366.99px) {
+  .flexbox-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  /*top: 9%;*/
+  left: 900px;
+  padding: 5rem 1rem 7rem 1rem;
+  }
+
+  .agreement-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: horizontal;
+  justify-content: space-around;
+  /*position: relative;*/
+  width: 335px;
+  height: 335px;
+  margin-left: 300px;
+  /*top: 9%;*/
+  padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .n-container__item {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin-bottom: 2.33rem;
+  }
+}
+
+
+@media all and (max-width: 480px) and (max-width: 667px) {
+  .flexbox-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-grow: 1;
+  justify-content: space-around;
+  width: 100%;
+  position: fixed; /* we do want to pull the nav container out of the document flow on small-width devices*/
+  /*height: 10%;
+  width: 100%;*/
+  left: 1%;
+  top: 1%;
+  }
+
+  p{
+    width: 270px;
+  }
+}
+
+.agreement-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  align-items: horizontal;
+  justify-content: space-around;
+  /*position: relative;*/
+  width: 200px;
+  height: 200px;
+  /*width: 80%;*/
+  /*top: 9%;*/
+  padding: 1rem 1rem 2rem 1rem;
+}
+
+
+
+/* widescreen */
+@media all and (min-width: 1920px) {
+  .flexbox-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  /*top: 9%;*/
+  left: 1000px;
+  /*padding: 5rem 1rem 7rem 1rem;*/
+  }
+
+  .agreement-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: horizontal;
+  justify-content: space-around;
+  margin-left: 300px;
+  top: 1%;
+  }
+
+  .n-container {
+    width: 200px;
+    height: 200px;
+    padding: .13rem 1rem 1.33rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .n-container__item {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  p, h3 {
+    width: 600px;
+    font-size: 21px;
+  }
+}
+
+/* widescreen */
+@media all and (min-width: 1024px) and (max-width: 1600px) and (min-height: 800px) {
+  .flexbox-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  /*top: 9%;*/
+  left: 400px;
+  /*padding: 5rem 1rem 7rem 1rem;*/
+  }
+
+  .agreement-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: horizontal;
+  justify-content: space-around;
+  margin-left: 300px;
+  top: 1%;
+  /*position: relative;*/
+  /*width: 100px;
+  height: 100px;
+  width: 100%;*/
+  
+  /*top: 9%;
+  padding: 1rem 1rem 2rem 1rem;*/
+  }
+
+  .n-container {
+    width: 200px;
+    height: 200px;
+    padding: .13rem 1rem 1.33rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .n-container__item {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
+
+  p{
+    width: 600px;
+    font-size: 21px;
+  }
+}
+
+/* landscape iPhones */
+@media all and (max-width: 736px) and (orientation: landscape) {
+  .flexbox-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 100%;
+  /*top: 9%;*/
+  left: 200px;
+  /*padding: 5rem 1rem 7rem 1rem;*/
+  }
+
+  .agreement-container {
+  display: inline-flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  align-items: horizontal;
+  justify-content: space-around;
+  left: 100px;
+  width: 235px;
+  /*position: relative;*/
+  /*width: 100px;
+  height: 100px;
+  width: 100%;*/
+  
+  /*top: 9%;
+  padding: 1rem 1rem 2rem 1rem;*/
+  }
+
+  .n-container {
+    width: 47px;
+    height: 47px;
+    padding: .13rem 1rem 1.33rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .n-container__item {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+  }
+}
+
+/* I want the buttons to remain vertical on iPhone 6s in landscape mode
+  but without having to specify landscape specifically */
+@media all and (max-width: 414px) {
+  .flexbox-container {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    flex-grow: 1;
+    justify-content: space-around;
+    width: 100%;
+    height: 67px;
+    position: fixed; /* we do want to pull the nav container out of the document flow on small-width devices*/
+    /*height: 10%;
+    width: 100%;*/
+    top: 1%;
+  }
+
+  .agreement-container {
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: horizontal;
+    justify-content: space-around;
+    /*position: relative;*/
+    width: 100%;
+    height: 200px;
+    margin-top: 77px;
+    /*width: 80%;*/
+    /*top: 9%;*/
+    padding: 1rem 1rem 2rem 1rem;
+  }
+
+  .n-container {
+    width: 100%;
+    height: 100%;
+    padding: .13rem 1rem 1.33rem 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .n-container__item {
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+  }
+}
+
+#testing {
+  text-align: center;
+}
+
+/* cleanup*/
+
+#COA {
+  visibility: hidden; /* we want it to occupy the area even when it is hidden */
+}
+
+
+#instructions {
+  visibility: visible;
+}
+
+div[class^='circleOfAgreements'] {
+  background:url(
+   data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAcAAAAHCAYAAADEUlfTAAAAG0lEQVQIW2OMq7zlw4ADMIIkF7WrbcEmP+gkAarWGgXyq5CNAAAAAElFTkSuQmCC
+    ) repeat;
+}
